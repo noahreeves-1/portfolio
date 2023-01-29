@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+}
+
+@font-face {
+  font-family: "satoshi-regular";
+  src: url("./assets/fonts/Satoshi-Medium.woff");
+}
+
+html {
+  font-family: satoshi-regular;
+}
+
 /* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;

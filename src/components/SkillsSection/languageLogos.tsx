@@ -1,9 +1,9 @@
-import html5Logo from "../../assets/html5logo.png";
-import cssLogo from "../../assets/css3logo.png";
-import javascriptLogo from "../../assets/javascriptlogo.png";
-import typescriptLogo from "../../assets/typescript-logo.png";
-import nodejsLogo from "../../assets/nodejslogo.webp";
-import sqlLogo from "../../assets/sqlserverlogo.svg";
+import html5Logo from "../../assets/images/html5logo.png";
+import cssLogo from "../../assets/images/css3logo.png";
+import javascriptLogo from "../../assets/images/javascriptlogo.png";
+import typescriptLogo from "../../assets/images/typescript-logo.png";
+import nodejsLogo from "../../assets/images/nodejslogo.webp";
+import sqlLogo from "../../assets/images/sqlserverlogo.svg";
 
 export interface LanguageLogo {
   name: string;

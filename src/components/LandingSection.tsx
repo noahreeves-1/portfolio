@@ -1,12 +1,21 @@
 export function LandingSection() {
   return (
-    <section id="home" className="px-4 pt-40 pb-20 text-center  text-cyan-900">
-      <div className="text-3xl font-bold">Noah H. Kim</div>
-      <div className="pt-20 italic">
-        "Don't pray for an easy life. Pray for the strength to endure a
-        difficult one."
+    <section
+      id="home"
+      className="px-4 py-20 mx-auto text-white bg-cloud-blue-600 sm:py-40"
+    >
+      <div className="max-w-5xl mx-auto py-20">
+        <div className="text-2xl font-bold sm:text-5xl animate-slideInLeft">
+          NOAH H. KIM
+        </div>
+        <div className="pt-4 sm:pt-8">
+          <p className="text-sm sm:text-xl animate-slideInUp1">Ex-Consultant</p>
+          <p className="text-sm sm:text-xl animate-slideInUp2">
+            Full Stack Engineer
+          </p>
+          <p className="text-sm sm:text-xl animate-slideInUp3">Entrepreneur</p>
+        </div>
       </div>
-      <p className="italic pt-2">- Bruce Lee</p>
     </section>
   );
 }

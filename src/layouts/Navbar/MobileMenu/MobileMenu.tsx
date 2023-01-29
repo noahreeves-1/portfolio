@@ -34,13 +34,13 @@ export const MobileMenu: React.FC<MenuProps> = ({ links, close }) => {
         >
           <div className=" flex items-center justify-between">
             <h1
-              className="font-bold text-cyan-900
+              className="font-bold text-cloud-blue-600
             "
             >
               Navigation
             </h1>
             <p
-              className="font-bold hover:scale-110 transition-all cursor-pointer"
+              className="font-bold hover:scale-110 transition-all cursor-pointer text-cloud-blue-600"
               onClick={close}
             >
               X
@@ -52,13 +52,13 @@ export const MobileMenu: React.FC<MenuProps> = ({ links, close }) => {
                 <Link
                   key={index}
                   to={path}
-                  className="py-2 text-zinc-500 hover:text-cyan-900 cursor-pointer block"
+                  className="py-2 text-zinc-500 hover:text-cloud-blue-600 cursor-pointer block"
                 >
                   <p onClick={close}>{title}</p>
                 </Link>
               );
             })}
-            <div className="py-2 text-zinc-500 hover:text-cyan-900 cursor-pointer">
+            <div className="py-2 text-zinc-500 hover:text-cloud-blue-600 cursor-pointer">
               <Link to="/somewhere">Somewhere</Link>
             </div>
           </div>

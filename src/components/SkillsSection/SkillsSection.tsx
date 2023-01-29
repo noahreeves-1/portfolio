@@ -2,13 +2,12 @@
 import languagesLogos from "./languageLogos";
 
 // frameworks
-import tailwindLogo from "../../assets/tailwind-logo.png";
-import reactLogo from "../../assets/react-icon.png";
+import tailwindLogo from "../../assets/images/tailwind-logo.png";
+import reactLogo from "../../assets/images/react-icon.png";
 
 // tools
-import gitLogo from "../../assets/gitlogo.png";
-import gitHubLogo from "../../assets/githublogo.svg";
-import firebaseLogo from "../../assets/firebase-logo.png";
+import gitLogo from "../../assets/images/gitlogo.png";
+import gitHubLogo from "../../assets/images/githublogo.svg";
 import { Skill } from "./Skill/Skill";
 
 const Skills = () => {
@@ -17,15 +16,15 @@ const Skills = () => {
   });
 
   return (
-    <section id="skills" className="pt-16">
+    <section id="skills" className="py-16 bg-cloud-blue-600 sm:py-32">
       <div className="text-center">
-        <p className="font-bold">Languages</p>
+        <p className="text-white text-lg sm:text-2xl">Languages</p>
         <div className="pt-4 flex justify-center items-center gap-4 ">
           {languages}
         </div>
       </div>
       <div className="text-center">
-        <div className="pt-8 font-bold">Libraries</div>
+        <div className="pt-8 text-white text-lg sm:text-2xl">Libraries</div>
         <div className="flex justify-center items-center gap-4">
           <div className="group">
             <img
@@ -50,7 +49,7 @@ const Skills = () => {
         </div>
       </div>
       <div className="text-center">
-        <div className="font-bold">Tools</div>
+        <div className="text-white text-lg sm:text-2xl">Tools</div>
         <div className=" flex justify-center items-center gap-4">
           <div className="group">
             <img

@@ -1,15 +1,16 @@
-import accentureLogo from "../../assets/accenture-logo.svg";
-import glassDoctorLogo from "../../assets/glass-doctor-logo.png";
-import businessExpoLogo from "../../assets/business-expo-center-logo.png";
-import smuLogo from "../../assets/smu-logo.png";
-import kornFerryLogo from "../../assets/Korn-ferry-logo.jpg";
-import rnlLogo from "../../assets/RNL_logo.png";
+import accentureLogo from "../../assets/images/accenture-logo.svg";
+import glassDoctorLogo from "../../assets/images/glass-doctor-logo.png";
+import businessExpoLogo from "../../assets/images/business-expo-center-logo.png";
+import smuLogo from "../../assets/images/smu-logo.png";
+import kornFerryLogo from "../../assets/images/Korn-ferry-logo.jpg";
+import rnlLogo from "../../assets/images/RNL_logo.png";
 
 export interface IBrandLogo {
   name: string;
   src: string;
   alt: string;
   url: string;
+  width?: number | string;
 }
 
 export const brandLogos: IBrandLogo[] = [
