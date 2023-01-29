@@ -1,22 +1,20 @@
 import * as React from "react";
-import { LanguageLogo } from "../languageLogos";
+import { ILogo } from "../logos/languageLogos";
 
 export interface SkillProps {
-  logo: LanguageLogo;
+  logo: ILogo;
 }
 
 export const Skill: React.FC<SkillProps> = ({ logo }) => {
   return (
-    <div className="group">
+    <div className="text-gray-300 flex items-center grayscale transition-all hover:-translate-y-2 hover:grayscale-0 hover:text-white duration-500">
       <img
         src={logo.src}
         alt={logo.alt}
-        width={logo.width || 40}
-        className="group-hover:-translate-y-2 duration-500"
+        width={logo.width || 24}
+        className="sm:w-14"
       ></img>
-      {/* <p className="opacity-0 transition-all group-hover:opacity-100 font-semibold text-xs">
-        {logo.name}
-      </p> */}
+      <p className="ml-2 text-xs sm:text-lg">{logo.name}</p>
     </div>
   );
 };

@@ -2,9 +2,9 @@ export function LandingSection() {
   return (
     <section
       id="home"
-      className="px-4 py-20 mx-auto text-white bg-cloud-blue-600 sm:py-40"
+      className="px-4 py-40 mx-auto text-white bg-cloud-blue-500 sm:py-72"
     >
-      <div className="max-w-5xl mx-auto py-20">
+      <div className="max-w-5xl mx-auto">
         <div className="text-2xl font-bold sm:text-5xl animate-slideInLeft">
           NOAH H. KIM
         </div>

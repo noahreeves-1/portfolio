@@ -1,69 +1,73 @@
 // languages
-import languagesLogos from "./languageLogos";
-
-// frameworks
-import tailwindLogo from "../../assets/images/tailwind-logo.png";
-import reactLogo from "../../assets/images/react-icon.png";
-
-// tools
-import gitLogo from "../../assets/images/gitlogo.png";
-import gitHubLogo from "../../assets/images/githublogo.svg";
+import languagesLogos from "./logos/languageLogos";
+import skillsLogos from "./logos/frameworkLogos";
+import databaseToolsLogos from "./logos/databaseToolsLogos";
+import nonProgrammingLogos from "./logos/nonProgrammingLogos";
 import { Skill } from "./Skill/Skill";
+import { SkillNoDescription } from "./Skill/SkillVertDescription";
 
 const Skills = () => {
   const languages = languagesLogos.map((eachLogo) => {
     return <Skill key={eachLogo.name} logo={eachLogo} />;
   });
 
+  const skills = skillsLogos.map((eachLogo) => {
+    return <Skill key={eachLogo.name} logo={eachLogo} />;
+  });
+
+  const dbOtherTools = databaseToolsLogos.map((eachLogo) => {
+    return <Skill key={eachLogo.name} logo={eachLogo} />;
+  });
+
+  const nonProgramming = nonProgrammingLogos.map((eachLogo) => {
+    return <SkillNoDescription key={eachLogo.name} logo={eachLogo} />;
+  });
+
   return (
-    <section id="skills" className="py-16 bg-cloud-blue-600 sm:py-32">
-      <div className="text-center">
-        <p className="text-white text-lg sm:text-2xl">Languages</p>
-        <div className="pt-4 flex justify-center items-center gap-4 ">
-          {languages}
+    <section
+      id="skills"
+      className="px-4 py-14 bg-cloud-blue-600 flex flex-col items-center sm:py-28"
+    >
+      <h3 className="text-center text-white text-lg font-bold sm:text-3xl">
+        Programming Skills
+      </h3>
+      <p className="py-6 text-center text-gray-300 text-sm sm:text-lg sm:py-12">
+        I have used these to build web and mobile apps
+      </p>
+      <div
+        id="programming-skills-container"
+        className="flex justify-between w-full sm:max-w-5xl gap-4"
+      >
+        <div id="languages-container" className="w-1/3">
+          <p className="mb-4 text-white  text-center text-sm font-bold sm:mb-8 sm:text-xl">
+            Languages & Runtime
+          </p>
+          <div className="flex flex-col gap-2 md:ml-14">{languages}</div>
+        </div>
+        <div id="libraries-frameworks-container" className="w-1/3">
+          <p className="mb-4 text-white text-center text-sm font-bold sm:mb-8 sm:text-xl">
+            Libraries & Frameworks
+          </p>
+          <div className="flex flex-col gap-2 md:ml-14">{skills}</div>
+        </div>
+        <div id="database-tools-container" className="w-1/3">
+          <p className="mb-4 text-white text-center text-sm font-bold sm:mb-8 sm:text-xl">
+            Databases & Other Tools
+          </p>
+          <div className="flex flex-col gap-2 md:ml-14">{dbOtherTools}</div>
         </div>
       </div>
-      <div className="text-center">
-        <div className="pt-8 text-white text-lg sm:text-2xl">Libraries</div>
-        <div className="flex justify-center items-center gap-4">
-          <div className="group">
-            <img
-              src={tailwindLogo}
-              alt="tailwind logo"
-              className="mb-3 w-16 group-hover:-translate-y-2 duration-500"
-            ></img>
-            {/* <p className="opacity-0 transition-all group-hover:opacity-100 font-semibold">
-              Tailwind
-            </p> */}
-          </div>
-          <div className="group">
-            <img
-              src={reactLogo}
-              alt="react logo"
-              className="w-12 mb-4 group-hover:-translate-y-2 duration-500"
-            ></img>
-            {/* <p className="opacity-0 transition-all group-hover:opacity-100 font-semibold">
-              React
-            </p> */}
-          </div>
-        </div>
-      </div>
-      <div className="text-center">
-        <div className="text-white text-lg sm:text-2xl">Tools</div>
-        <div className=" flex justify-center items-center gap-4">
-          <div className="group">
-            <img
-              src={gitLogo}
-              alt="git logo"
-              className="w-16 group-hover:-translate-y-2 duration-500"
-            ></img>
-          </div>
-          <div className="group">
-            <img
-              src={gitHubLogo}
-              alt=""
-              className="w-8 group-hover:-translate-y-2 duration-500"
-            ></img>
+      <div id="non-programming-skills-container mx-4">
+        <h3 className="pt-12 sm:pt-24 text-center text-white text-lg font-bold sm:text-3xl">
+          Non-Programming Skills
+        </h3>
+        <p className="pt-6 text-sm text-gray-300 text-center sm:pt-12 sm:text-lg">
+          I have extensive experience with these and can use them with
+          confidence
+        </p>
+        <div id="software-container">
+          <div className="pt-6 flex justify-center gap-2 sm:pt-12 sm:gap-4">
+            {nonProgramming}
           </div>
         </div>
       </div>

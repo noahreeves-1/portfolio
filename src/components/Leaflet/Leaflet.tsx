@@ -12,8 +12,6 @@ export const LeafletMap = () => {
       ? "#0077b4"
       : countryName === "China"
       ? "#0077b4"
-      : countryName === "Indonesia"
-      ? "#0077b4"
       : countryName === "United States of America"
       ? "#0077b4"
       : countryName === "Canada"
@@ -80,7 +78,7 @@ export const LeafletMap = () => {
           center={[40.505, -0.09]}
           zoom={2}
           minZoom={1}
-          scrollWheelZoom={true}
+          scrollWheelZoom={false}
           maxBounds={[
             [180, -180],
             [-180, 180],

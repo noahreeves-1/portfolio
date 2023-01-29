@@ -8,21 +8,21 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex justify-center bg-cloud-blue-600">
+    <div className="flex justify-center bg-cloud-blue-500">
       <nav
         className="flex justify-between w-full max-w-5xl text-white"
         id="navbar"
       >
         <a href="/" className="flex items-center ml-4 my-4">
-          <div id="logo-container" className=" flex gap-1">
+          <div id="logo-container" className=" flex gap-1 items-center">
             <img
               src="https://img.icons8.com/ios-glyphs/90/FFFFFF/owl.png"
               alt="owl logo"
-              className="h-6"
+              className="h-6 sm:h-10"
             />
             {/* //* below <a> tag required by icons8 for free usage */}
             <div id="initials-container">
-              <p className="font-bold text-white">NHK</p>
+              <p className="font-bold text-white sm:text-lg">NHK</p>
             </div>
           </div>
         </a>
@@ -35,9 +35,15 @@ export function Navbar() {
         </a>
 
         {/* // * Web Menu */}
-        <WebMenu links={NavBarData} />
+        <div className="flex items-center">
+          <WebMenu links={NavBarData} />
+        </div>
         <div className="flex items-center mr-4">
-          <p className="hidden sm:block">somewhere</p>
+          <a href="#about">
+            <p className="py-1 px-4 rounded-full bg-cloud-blue-400 hidden sm:block sm:text-lg">
+              Contact
+            </p>
+          </a>
         </div>
         <div className="flex justify-end w-full items-center sm:hidden">
           <button className="px-5 py-2" onClick={() => setOpen(true)}>

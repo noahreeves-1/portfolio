@@ -5,19 +5,23 @@ export interface INavBarData {
 
 export const NavBarData = [
   {
+    title: "Highlights",
+    path: "#highlights",
+  },
+  {
+    title: "Skills",
+    path: "#skills",
+  },
+  {
+    title: "About",
+    path: "#about",
+  },
+  {
     title: "Resume",
     path: "/resume",
   },
   {
-    title: "Something",
-    path: "/something",
-  },
-  {
-    title: "About",
-    path: "/about",
-  },
-  {
-    title: "Contact",
-    path: "/contact",
+    title: "Articles",
+    path: "/articles",
   },
 ];
