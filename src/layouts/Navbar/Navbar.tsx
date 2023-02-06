@@ -39,7 +39,7 @@ export function Navbar() {
           <WebMenu links={NavBarData} />
         </div>
         <div className="flex items-center mr-4">
-          <a href="#about">
+          <a href="#contact">
             <p className="py-1 px-4 rounded-full bg-cloud-blue-400 hidden sm:block sm:text-lg">
               Contact
             </p>

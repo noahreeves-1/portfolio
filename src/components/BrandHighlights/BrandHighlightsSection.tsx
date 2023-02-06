@@ -4,8 +4,8 @@ import { Brand } from "./Brand/Brand";
 
 export const BrandHighlights: React.FC = () => {
   return (
-    <section id="highlights" className="py-10 bg-white sm:py-20">
-      <h2 className="py-8 text-lg text-center text-zinc-400 sm:py-16 sm:text-3xl">
+    <section id="highlights" className="py-10 sm:py-40">
+      <h2 className="pb-8 text-xl text-center text-zinc-400 sm:pb-16 sm:text-3xl">
         Formerly at
       </h2>
       <div className="relative py-4 shadow flex overflow-x-hidden items-center">

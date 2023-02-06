@@ -1,7 +1,6 @@
 import mongoDbLogo from "../../../assets/images/mongo-svgrepo-com.svg";
 import sqlServerLogo from "../../../assets/images/sql-server.webp";
 import mySqlLogo from "../../../assets/images/mysql-svgrepo-com.svg";
-import firebaseLogo from "../../../assets/images/firebase-svgrepo-com.svg";
 import herokuLogo from "../../../assets/images/heroku-icon-svgrepo-com.svg";
 import railwayLogo from "../../../assets/images/railway-app.svg";
 import githubLogo from "../../../assets/images/githublogo.svg";
@@ -22,11 +21,6 @@ const databaseToolsLogos: ILogo[] = [
     name: "MySQL",
     src: mySqlLogo,
     alt: "mysql logo",
-  },
-  {
-    name: "Firebase",
-    src: firebaseLogo,
-    alt: "firebase logo",
   },
   {
     name: "Heroku",

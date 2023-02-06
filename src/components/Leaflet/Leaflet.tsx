@@ -68,8 +68,8 @@ export const LeafletMap = () => {
   });
 
   return (
-    <section className="pt-10 pb-20 bg-white sm:pt-20 sm:pb-36">
-      <h2 className="pb-8 text-lg text-center text-zinc-400 sm:pb-16 sm:text-3xl">
+    <section className=" pb-20 sm:pb-36">
+      <h2 className="pb-8 text-xl text-center text-zinc-400 sm:pb-16 sm:text-3xl">
         Spotted in
       </h2>
       <div id="map" className="map flex justify-center">

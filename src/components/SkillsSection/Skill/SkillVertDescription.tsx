@@ -7,7 +7,7 @@ export interface SkillProps {
 
 export const SkillNoDescription: React.FC<SkillProps> = ({ logo }) => {
   return (
-    <div className="text-gray-300 flex flex-col items-center grayscale transition-all hover:-translate-y-2 duration-500 hover:grayscale-0 hover:text-white">
+    <div className="text-gray-300 flex flex-col items-center transition-all hover:-translate-y-2 duration-500 hover:text-white">
       <img
         src={logo.src}
         alt={logo.alt}

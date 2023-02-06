@@ -13,15 +13,7 @@ export const NavBarData = [
     path: "#skills",
   },
   {
-    title: "About",
-    path: "#about",
-  },
-  {
-    title: "Resume",
-    path: "/resume",
-  },
-  {
-    title: "Articles",
-    path: "/articles",
+    title: "Career",
+    path: "#career",
   },
 ];

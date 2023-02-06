@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { INavBarData } from "../NavbarData";
 import { MouseEventHandler } from "react";
 
@@ -24,7 +25,7 @@ export const MobileMenu: React.FC<MenuProps> = ({ links, close }) => {
   }, []);
 
   return (
-    <div>
+    <div className="z-10">
       <div className="fixed inset-0 top-0 1-0 h-screen w-full backdrop-blur-sm bg-gray-500 bg-opacity-60"></div>
       <div className="fixed inset-0 top-0 1-0 p-5">
         <div
@@ -48,18 +49,32 @@ export const MobileMenu: React.FC<MenuProps> = ({ links, close }) => {
           </div>
           <div className="mt-4 divide-y">
             {links.map(({ title, path }, index) => {
-              return (
-                <Link
-                  key={index}
-                  to={path}
-                  className="py-2 text-zinc-500 hover:text-cloud-blue-600 cursor-pointer block"
-                >
-                  <p onClick={close}>{title}</p>
-                </Link>
-              );
+              if (path.startsWith("/")) {
+                return (
+                  <Link
+                    key={index}
+                    to={path}
+                    className="py-2 text-zinc-500 hover:text-cloud-blue-600 cursor-pointer block"
+                  >
+                    <p onClick={close}>{title}</p>
+                  </Link>
+                );
+              } else {
+                return (
+                  <HashLink
+                    key={index}
+                    to={"/" + path}
+                    className="py-2 text-zinc-500 hover:text-cloud-blue-600 cursor-pointer block"
+                  >
+                    <p onClick={close}>{title}</p>
+                  </HashLink>
+                );
+              }
             })}
             <div className="py-2 text-zinc-500 hover:text-cloud-blue-600 cursor-pointer">
-              <Link to="/somewhere">Somewhere</Link>
+              <HashLink to="/#contact">
+                <p onClick={close}>Contact</p>
+              </HashLink>
             </div>
           </div>
         </div>

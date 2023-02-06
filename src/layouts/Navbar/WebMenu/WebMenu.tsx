@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { INavBarData } from "../NavbarData";
 
 export interface MenuProps {
@@ -23,11 +24,13 @@ export const WebMenu: React.FC<MenuProps> = ({ links }) => {
             );
           } else {
             return (
-              <a href={path}>
-                <p className="hover:text-zinc-500 cursor-pointer sm:text-base">
-                  {title}
-                </p>
-              </a>
+              <HashLink
+                key={index}
+                to={"/" + path}
+                className="hover:text-zinc-500 cursor-pointer sm:text-base"
+              >
+                {title}
+              </HashLink>
             );
           }
         })}

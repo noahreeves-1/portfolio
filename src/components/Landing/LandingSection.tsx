@@ -6,7 +6,7 @@ export function LandingSection() {
     >
       <div className="max-w-5xl mx-auto">
         <div className="text-2xl font-bold sm:text-5xl animate-slideInLeft">
-          NOAH H. KIM
+          NOAH KIM
         </div>
         <div className="pt-4 sm:pt-8">
           <p className="text-sm sm:text-xl animate-slideInUp1">Ex-Consultant</p>

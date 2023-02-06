@@ -28,7 +28,7 @@ const Skills = () => {
       id="skills"
       className="px-4 py-14 bg-cloud-blue-600 flex flex-col items-center sm:py-28"
     >
-      <h3 className="text-center text-white text-lg font-bold sm:text-3xl">
+      <h3 className="text-center text-white text-xl font-bold sm:text-3xl">
         Programming Skills
       </h3>
       <p className="py-6 text-center text-gray-300 text-sm sm:text-lg sm:py-12">
@@ -58,7 +58,7 @@ const Skills = () => {
         </div>
       </div>
       <div id="non-programming-skills-container mx-4">
-        <h3 className="pt-12 sm:pt-24 text-center text-white text-lg font-bold sm:text-3xl">
+        <h3 className="pt-12 sm:pt-24 text-center text-white text-xl font-bold sm:text-3xl">
           Non-Programming Skills
         </h3>
         <p className="pt-6 text-sm text-gray-300 text-center sm:pt-12 sm:text-lg">
