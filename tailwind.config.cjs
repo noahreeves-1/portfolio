@@ -27,6 +27,7 @@ module.exports = {
         slideInUp1: "slideInUp 1s ease-out",
         slideInUp2: "slideInUp2 2s ease-out",
         slideInUp3: "slideInUp3 3s ease-out",
+        fadeUp: "fadeUp 0.5s ease-in",
       },
       keyframes: {
         marquee: {
@@ -55,6 +56,10 @@ module.exports = {
         slideInLeft: {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(0%)" },
+        },
+        fadeUp: {
+          "0%": { opacity: 0, transform: "translateY(10%)" },
+          "100%": { opacity: 1, transform: "translateY(0%)" },
         },
       },
     },

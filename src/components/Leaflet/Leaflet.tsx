@@ -3,8 +3,11 @@ import "leaflet/dist/leaflet.css";
 import mapData from "./data/countries.json";
 import { Feature, FeatureCollection } from "geojson";
 import { Layer, StyleFunction } from "leaflet";
+import { useIntersection } from "../../hooks/useOnScreen";
 
 export const LeafletMap = () => {
+  const [isIntersecting, ref] = useIntersection();
+
   const addCountryColor = (countryName: string): string => {
     return countryName === "South Korea"
       ? "#0077b4"
@@ -68,7 +71,10 @@ export const LeafletMap = () => {
   });
 
   return (
-    <section className=" pb-20 sm:pb-36">
+    <section
+      ref={ref}
+      className={isIntersecting ? "pb-50 sm:pb-10 animate-fadeUp" : "opacity-0"}
+    >
       <h2 className="pb-8 text-xl text-center text-zinc-400 sm:pb-16 sm:text-3xl">
         Spotted in
       </h2>

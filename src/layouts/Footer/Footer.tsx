@@ -4,10 +4,10 @@ import { ContactSection } from "../../components/Contact/ContactSection";
 
 export const Footer = () => {
   return (
-    <section className="px-4 bg-cloud-blue-500 text-white flex justify-center sm:py-4">
+    <section className="p-4 sm:pt-20  bg-cloud-blue-500 text-white flex justify-center">
       <div className="max-w-5xl w-full sm:flex sm:justify-between">
-        <div className="p-4">
-          <h3 className="py-4 text-xl text-center sm:text-3xl">
+        <div className="py-4">
+          <h3 className="pb-4 text-xl text-center sm:text-3xl">
             Additional Info
           </h3>
           <div className="flex gap-4 sm:flex-col">

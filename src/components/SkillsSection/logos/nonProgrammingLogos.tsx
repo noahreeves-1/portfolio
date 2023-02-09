@@ -1,5 +1,6 @@
 import tableauLogo from "../../../assets/images/tableau-icon-svgrepo-com.svg";
 import powerBiLogo from "../../../assets/images/power-bi.svg";
+import bluePrismLogo from "../../../assets/images/blue_prism_logo.png";
 import excelLogo from "../../../assets/images/excel-svgrepo-com.svg";
 import powerPointLogo from "../../../assets/images/powerpoint-svgrepo-com.svg";
 import sharePointLogo from "../../../assets/images/ms-sharepoint-svgrepo-com.svg";
@@ -16,6 +17,11 @@ const nonProgrammingLogos: ILogo[] = [
     name: "Power BI",
     src: powerBiLogo,
     alt: "power bi logo",
+  },
+  {
+    name: "Blue Prism",
+    src: bluePrismLogo,
+    alt: "blue prism logo",
   },
   {
     name: "PowerPoint",

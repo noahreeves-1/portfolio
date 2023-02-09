@@ -57,9 +57,9 @@ export function ContactSection() {
         onSubmit={sendEmail}
         className="p-4 mx-auto rounded-lg flex flex-col gap-1 sm:max-w-md"
       >
-        <h3 className="text-xl text-center font-extrabold sm:text-3xl">
+        <h2 className="text-xl text-center font-extrabold sm:text-3xl">
           Contact Me
-        </h3>
+        </h2>
         <label className="sm:text-lg">Email</label>
         <div className="relative">
           <img src={mailIcon} alt="mail icon" className="absolute w-6 ml-1" />
