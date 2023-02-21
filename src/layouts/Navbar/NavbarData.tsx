@@ -20,4 +20,8 @@ export const NavBarData = [
     title: "Career",
     path: "#career",
   },
+  {
+    title: "Education",
+    path: "#education",
+  },
 ];

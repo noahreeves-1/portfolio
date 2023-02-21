@@ -23,10 +23,13 @@ module.exports = {
       animation: {
         marquee: "marquee 60s linear infinite",
         marquee2: "marquee2 60s linear infinite",
-        slideInLeft: "slideInLeft 0.5s ease-out",
-        slideInUp1: "slideInUp 1s ease-out",
-        slideInUp2: "slideInUp2 2s ease-out",
-        slideInUp3: "slideInUp3 3s ease-out",
+        slideInUp: "slideInUp 1s ease-out 3.7s",
+        slideInDown1: "slideInDown1 1s ease-out",
+        slideInDown2: "slideInDown2 2s ease-out",
+        slideInDown3: "slideInDown3 3s ease-out",
+        slideInLeft: "slideInLeft 0.5s ease-out 3s",
+        slideInLeft2: "slideInLeft 1s ease-out",
+        slideInRight: "slideInRight 1s ease-out",
         fadeUp: "fadeUp 0.5s ease-in",
       },
       keyframes: {
@@ -40,21 +43,29 @@ module.exports = {
         },
         slideInUp: {
           "0%": { transform: "translateY(100%)", opacity: 0 },
+          "100%": { transform: "translateY(0%)", opacity: 1 },
+        },
+        slideInDown1: {
+          "0%": { transform: "translateY(-100%)", opacity: 0 },
           "66%": { opacity: 0 },
           "100%": { transform: "translateY(0%)", opacity: 1 },
         },
-        slideInUp2: {
-          "0%": { transform: "translateY(100%)", opacity: 0 },
+        slideInDown2: {
+          "0%": { transform: "translateY(-100%)", opacity: 0 },
           "66%": { opacity: 0 },
           "100%": { transform: "translateY(0%)", opacity: 1 },
         },
-        slideInUp3: {
-          "0%": { transform: "translateY(100%)", opacity: 0 },
+        slideInDown3: {
+          "0%": { transform: "translateY(-100%)", opacity: 0 },
           "66%": { opacity: 0 },
           "100%": { transform: "translateY(0%)", opacity: 1 },
         },
         slideInLeft: {
-          "0%": { transform: "translateX(-100%)" },
+          "0%": { transform: "translateX(-200%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+        slideInRight: {
+          "0%": { transform: "translateX(200%)" },
           "100%": { transform: "translateX(0%)" },
         },
         fadeUp: {

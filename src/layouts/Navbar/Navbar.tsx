@@ -8,7 +8,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex justify-center bg-cloud-blue-500">
+    <div className="flex justify-center bg-cloud-blue-800">
       <nav
         className="flex justify-between w-full max-w-5xl text-white"
         id="navbar"
@@ -40,7 +40,7 @@ export function Navbar() {
         </div>
         <div className="flex items-center mr-4">
           <a href="#contact">
-            <p className="py-1 px-4 rounded-full bg-cloud-blue-400 hidden sm:block sm:text-lg">
+            <p className="py-1 px-4 rounded-full bg-cloud-blue-600 hidden sm:block sm:text-lg">
               Contact
             </p>
           </a>

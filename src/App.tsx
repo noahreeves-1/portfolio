@@ -15,7 +15,6 @@ function App() {
         <Route path="/" element={<Homepage />} />
       </Routes>
       <footer className="mt-auto">
-        <WavyTop color="fill-cloud-blue-500" />
         <Footer />
       </footer>
     </>

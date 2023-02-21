@@ -25,8 +25,8 @@ export const Projects = () => {
           expand my skillset as fast as possible. Anyway, here are some of the
           projects I did:
         </p>
-        <p className="my-2 text-center text-sm text-orange-300 italic sm:text-lg sm:my-4">
-          FYI my focus was on functionality over design
+        <p className="m-2 text-center text-sm text-orange-300 italic sm:text-lg sm:my-4">
+          Just a caveat... my focus was on functionality over design
         </p>
       </div>
       <div

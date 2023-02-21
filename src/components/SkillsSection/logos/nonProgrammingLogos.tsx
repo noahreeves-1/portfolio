@@ -38,11 +38,11 @@ const nonProgrammingLogos: ILogo[] = [
     src: sharePointLogo,
     alt: "microsoft sharepoint logo",
   },
-  {
-    name: "OneDrive",
-    src: oneDriveLogo,
-    alt: "microsoft onedrive logo",
-  },
+  // {
+  //   name: "OneDrive",
+  //   src: oneDriveLogo,
+  //   alt: "microsoft onedrive logo",
+  // },
 ];
 
 export default nonProgrammingLogos;

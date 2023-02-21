@@ -15,7 +15,7 @@ export const SkillNoDescription: React.FC<SkillProps> = ({ logo }) => {
         loading="lazy"
         className="sm:w-14"
       ></img>
-      <p className="text-xs sm:text-lg">{logo.name}</p>
+      <p className="text-xs text-center sm:text-lg">{logo.name}</p>
     </div>
   );
 };

@@ -56,7 +56,7 @@ export const LeafletMap = () => {
   };
 
   const mapStyle = {
-    background: "transparent",
+    background: "#FFFFFF",
   };
 
   const countryNamePopup = (country: Feature, layer: Layer) => {
@@ -73,7 +73,9 @@ export const LeafletMap = () => {
   return (
     <section
       ref={ref}
-      className={isIntersecting ? "pb-50 sm:pb-10 animate-fadeUp" : "opacity-0"}
+      className={
+        isIntersecting ? "pb-50 sm:pb-10 animate-slideInLeft2" : "opacity-0"
+      }
     >
       <h2 className="pb-8 text-xl text-center text-zinc-400 sm:pb-16 sm:text-3xl">
         Spotted in

@@ -9,7 +9,7 @@ export const Education = () => {
   const [certDetailsRefIsIntersecting, certDetailsRef] = useIntersection();
 
   return (
-    <section id="degrees" className="flex flex-col items-center">
+    <section id="education" className="flex flex-col items-center">
       <h2
         ref={eduTitleRef}
         className={
@@ -28,7 +28,7 @@ export const Education = () => {
             : "opacity-0"
         }
       >
-        <div className="">
+        <div>
           <p className="font-extrabold sm:text-xl">
             Southern Methodist University
           </p>

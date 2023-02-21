@@ -18,56 +18,56 @@ export const experienceData: Iexperience[] = [
   {
     quote: `"You're doing great sweetie!"`,
     description:
-      "I was 16 years old when I got my first ever job. I was a Tennis Coach at a local summer camp. I was also an English and Math Tutor during my senior year of high school.",
+      "In 2010, I got my first ever job. I was a Tennis Coach at a local summer camp. I was also an english and algebra tutor during my senior year of high school.",
     image: tennisImg,
     imageAlt: "tennis",
   },
   {
     quote: `"I'm calling on behalf of Southern Methodist University."`,
     description:
-      "During my freshman and sophomore year of college, I worked 20 hrs/week and raised over $40,000 in donations.",
+      "During my freshman and sophomore years of college, I worked 20 hours a week as a student fundraiser and raised over $40,000 in donations for my alma mater.",
     image: telemarketingImg,
     imageAlt: "telemarketing",
   },
   {
     quote: `"Annyeonghaseyo."`,
     description:
-      "The summer after my freshman year of college, I worked as full-time Commerce Intern in Seoul, South Korea.",
+      "The summer after my freshman year of college, I worked as a full-time Commerce Intern in Seoul, South Korea.",
     image: koreaImg,
     imageAlt: "korea",
   },
   {
-    quote: `"Can I share something with you?"`,
+    quote: `"Great job everyone."`,
     description:
-      "The summer after my sophomore year, I worked two unpaid internships. Seeing that we lacked direction at one of them, I presented a marketing plan to the CEO. The next time I came in, he promoted me to Marketing Manager.",
+      "The summer after my sophomore year, I had two unpaid internships. After presenting a marketing plan to the CEO at one of them, he promoted me to Marketing Manager, and I managed 12 interns throughout the summer.",
     image: managerImg,
     imageAlt: "manager",
   },
   {
     quote: `"Found another one."`,
     description:
-      "The summer after my junior year, I got a full-time internship at a recruiting firm scouring the web for potential candidates for senior executive roles.",
+      "The summer after my junior year, I got a full-time internship at a recruiting firm scouring the web for potential candidates for senior executive roles. I learned how to get really good at using Google Search.",
     image: searchImg,
     imageAlt: "search",
   },
   {
     quote: `"We did it!"`,
     description:
-      "During my senior year and my Master's program, I led the marketing strategy and implementation for a local glass repair and installation franchise. We never hit $500,000/month before I started, but after I left, we were clearing that every single month. We won the 2015 Franchise of the Year award.",
+      "During my senior year and my Master's program, I led the marketing strategy and implementation for a local glass repair and installation franchise. We never hit $500,000/month before I started, but after I left, we were clearing that every single month. We ended up winning the 2015 Franchise of the Year award that year.",
     image: awardImg,
     imageAlt: "award",
   },
   {
     quote: `"Pls fix. Thanks."`,
     description:
-      "After my Master's program, I got a job at Accenture working as a Consulting Analyst then as a Digital Strategy Consultant. I stayed for nearly 5 years and worked on 10 projects at 7 different clients. My focus was on robotic process automation (RPA), data visualization, and data management.",
+      "After my Master's program, I started at Accenture as a Consulting Analyst then as a Digital Strategy Consultant. I stayed for nearly 5 years and worked on 10 projects at 7 different clients. I often flew weekly to various cities around the U.S. focusing on projects related to data visualization, data strategy, data management, and robotic process automation.",
     image: consulting,
     imageAlt: "consulting",
   },
   {
     quote: `"It's working!"`,
     description:
-      "It was a struggle at first, but now I enjoy building applications and look forward to expanding my skillset to become the bestprogrammer I can be.",
+      "It was a struggle at first, but I love it now. I feel more free than I have ever felt before. I can't wait to become the best programmer I can be.",
     image: coding,
     imageAlt: "coding",
   },

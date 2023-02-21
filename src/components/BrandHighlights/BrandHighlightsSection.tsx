@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import { brandLogos } from "./BrandsData";
 import { Brand } from "./Brand/Brand";
 import { useIntersection } from "../../hooks/useOnScreen";
@@ -7,24 +7,47 @@ export const BrandHighlights: React.FC = () => {
   const [logosRefIsIntersecting, logosRef] = useIntersection();
   const [carouselRefIsIntersecting, carouselRef] = useIntersection();
   const [brandDetailsRefIsIntersecting, brandDetailsRef] = useIntersection();
+  const [offsetY, setOffsetY] = useState(0);
+
+  const handleScroll = () => setOffsetY(window.scrollY);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [brandDetailsRefIsIntersecting]);
+
+  const brandOneTag = document.getElementById("brandTagOne");
+
+  const brandOneTagRect = brandOneTag?.getBoundingClientRect();
+  const brandOneTagRectDiff = brandOneTagRect?.bottom! - offsetY;
+
+  const styleSlideInFromLeft = {
+    transform: `translateX(${Math.min(-brandOneTagRectDiff - 500, 0)}px)`,
+  };
+  const styleSlideInFromRight = {
+    transform: `translateX(${Math.max(brandOneTagRectDiff + 500, 0)}px)`,
+  };
+  const styleSlideInFromRight2 = {
+    transform: `translateX(${Math.max(brandOneTagRectDiff + 500, 0)}px)`,
+  };
 
   return (
-    <section id="highlights" className="pb-10 sm:pb-20 animate-fadeUp">
+    <section id="highlights" className="pb-10 animate-fadeUp sm:pb-20">
       <div ref={logosRef}>
         <h2
           className={
             logosRefIsIntersecting
-              ? "pb-8 text-xl text-center text-zinc-400 animate-fadeUp sm:pb-16 sm:text-3xl"
+              ? "pb-8 text-xl text-center text-zinc-400 font-extrabold animate-fadeUp sm:pb-16 sm:text-3xl"
               : "opacity-0"
           }
         >
-          Formerly at
+          Formerly At
         </h2>
         <div
           ref={carouselRef}
           className={
             carouselRefIsIntersecting
-              ? "relative py-4 shadow flex overflow-x-hidden items-center animate-fadeUp"
+              ? "relative py-4 bg-white shadow flex overflow-x-hidden items-center animate-fadeUp"
               : "opacity-0"
           }
         >
@@ -58,22 +81,26 @@ export const BrandHighlights: React.FC = () => {
         ref={brandDetailsRef}
         className={
           brandDetailsRefIsIntersecting
-            ? "px-4 flex flex-col gap-2 pt-8 text-center text-sm text-zinc-400 animate-fadeUp sm:text-2xl sm:pt-16 sm:gap-4"
+            ? "px-4 flex flex-col gap-2 pt-8 text-center text-sm text-zinc-400 animate-fadeUp overflow-hidden sm:text-2xl sm:pt-16 sm:gap-4"
             : "opacity-0"
         }
       >
-        <p>
+        <p
+          id="brandTagOne"
+          style={styleSlideInFromRight}
+          className="whitespace-nowrap"
+        >
           Advising
           <span className="text-cloud-blue-500 font-bold"> Fortune 500 </span>
           companies
         </p>
-        <p>
+        <p style={styleSlideInFromLeft}>
           Winning 2015{" "}
           <span className="text-cloud-blue-500 font-bold">
             Franchisee of the Year
           </span>
         </p>
-        <p>
+        <p style={styleSlideInFromRight2}>
           Rising to{" "}
           <span className="text-cloud-blue-500 font-bold">
             Marketing Manager
