@@ -12,7 +12,7 @@ function App() {
         <Navbar />
       </header>
       <Routes>
-        <Route path="/portfolio" element={<Homepage />} />
+        <Route path="/" element={<Homepage />} />
       </Routes>
       <footer className="mt-auto">
         <Footer />
