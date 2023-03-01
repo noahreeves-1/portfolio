@@ -23,11 +23,11 @@ module.exports = {
       animation: {
         marquee: "marquee 60s linear infinite",
         marquee2: "marquee2 60s linear infinite",
-        slideInUp: "slideInUp 1s ease-out 3.7s",
+        slideInUp: "slideInUp 1s ease-out 4s",
         slideInDown1: "slideInDown1 1s ease-out",
         slideInDown2: "slideInDown2 2s ease-out",
         slideInDown3: "slideInDown3 3s ease-out",
-        slideInLeft: "slideInLeft 0.5s ease-out 3s",
+        slideInLeft: "slideInLeft 1s ease-out 3s",
         slideInLeft2: "slideInLeft 1s ease-out",
         slideInRight: "slideInRight 1s ease-out",
         fadeUp: "fadeUp 0.5s ease-in",
