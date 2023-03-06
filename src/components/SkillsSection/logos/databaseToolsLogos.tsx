@@ -7,6 +7,7 @@ import mySqlLogo from "../../../assets/images/mysql-svgrepo-com.svg";
 import postgresqlLogo from "../../../assets/images/postgresql-svgrepo-com.svg";
 import dockerLogo from "../../../assets/images/docker-svgrepo-com.svg";
 import redisLogo from "../../../assets/images/redis-svgrepo-com.svg";
+import turboRepoLogo from "../../../assets/images/turborepo.dark.svg";
 import { ILogo } from "./languageLogos";
 
 const databaseToolsLogos: ILogo[] = [
@@ -39,6 +40,11 @@ const databaseToolsLogos: ILogo[] = [
     name: "Redis",
     src: redisLogo,
     alt: "redis logo",
+  },
+  {
+    name: "Turbo",
+    src: turboRepoLogo,
+    alt: "turbo logo",
   },
 ];
 
