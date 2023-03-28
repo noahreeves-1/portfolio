@@ -8,12 +8,12 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed flex justify-center bg-cloud-blue-800">
+    <div className="fixed w-full z-[1] flex justify-center bg-cloud-blue-800">
       <nav
         className="flex justify-between w-full max-w-5xl text-white"
         id="navbar"
       >
-        <a href="/" className="flex items-center ml-4 my-4">
+        <a href="/#" className="flex items-center ml-4 my-4">
           <div id="logo-container" className=" flex gap-1 items-center">
             <img
               src="https://img.icons8.com/ios-glyphs/90/FFFFFF/owl.png"

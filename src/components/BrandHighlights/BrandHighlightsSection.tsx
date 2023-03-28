@@ -22,13 +22,13 @@ export const BrandHighlights: React.FC = () => {
   const brandOneTagRectDiff = brandOneTagRect?.bottom! - offsetY;
 
   const styleSlideInFromLeft = {
-    transform: `translateX(${Math.min(-brandOneTagRectDiff - 500, 0)}px)`,
+    transform: `translateX(${Math.min(-brandOneTagRectDiff - 400, 0)}px)`,
   };
   const styleSlideInFromRight = {
-    transform: `translateX(${Math.max(brandOneTagRectDiff + 500, 0)}px)`,
+    transform: `translateX(${Math.max(brandOneTagRectDiff + 400, 0)}px)`,
   };
   const styleSlideInFromRight2 = {
-    transform: `translateX(${Math.max(brandOneTagRectDiff + 500, 0)}px)`,
+    transform: `translateX(${Math.max(brandOneTagRectDiff + 400, 0)}px)`,
   };
 
   return (

@@ -80,9 +80,10 @@ export const LeafletMap = () => {
       <h2 className="pb-8 text-xl text-center text-zinc-400 sm:pb-16 sm:text-3xl">
         Spotted in
       </h2>
+      <div></div>
       <div id="map" className="map flex justify-center">
         <MapContainer
-          className="leaflet-container"
+          className="leaflet-container -z-[0]"
           center={[40.505, -0.09]}
           zoom={2}
           minZoom={1}

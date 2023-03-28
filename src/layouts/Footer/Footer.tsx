@@ -18,6 +18,7 @@ export const Footer = () => {
                 <a
                   href="https://www.linkedin.com/in/noahh-kim/"
                   className="flex gap-1 items-center sm:gap-2"
+                  target="_blank"
                 >
                   <img
                     src={linkedInLogo}
@@ -31,6 +32,7 @@ export const Footer = () => {
                 <a
                   href="https://github.com/noahreeves-1"
                   className="flex gap-1 items-center sm:gap-2"
+                  target="_blank"
                 >
                   <img
                     src={gitHubLogo}
