@@ -12,9 +12,9 @@ import { ILogo } from "./languageLogos";
 
 const databaseToolsLogos: ILogo[] = [
   {
-    name: "MongoDB",
-    src: mongoDbLogo,
-    alt: "mongodb logo",
+    name: "Postgre SQL",
+    src: postgresqlLogo,
+    alt: "postgre sql logo",
   },
   {
     name: "SQL Server",
@@ -27,9 +27,9 @@ const databaseToolsLogos: ILogo[] = [
     alt: "mysql logo",
   },
   {
-    name: "Postgre SQL",
-    src: postgresqlLogo,
-    alt: "postgre sql logo",
+    name: "MongoDB",
+    src: mongoDbLogo,
+    alt: "mongodb logo",
   },
   {
     name: "Docker",
