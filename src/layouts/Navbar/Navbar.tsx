@@ -8,7 +8,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex justify-center bg-cloud-blue-800">
+    <div className="fixed flex justify-center bg-cloud-blue-800">
       <nav
         className="flex justify-between w-full max-w-5xl text-white"
         id="navbar"
