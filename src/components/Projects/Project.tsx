@@ -20,13 +20,8 @@ export const Projects = () => {
           <span className="text-blue-500">
             <a href="https://www.theodinproject.com/">The Odin Project</a>
           </span>
-          . I created over 20 different applications. I viewed these mainly as
-          learning exercises so I can practice on many different projects and
-          expand my skillset as fast as possible. Anyway, here are some of the
-          projects I did:
-        </p>
-        <p className="m-2 text-center text-sm text-orange-300 italic sm:text-lg sm:my-4">
-          Just a caveat... my focus was on functionality over design
+          . I have created over 20 different applications. I viewed these mainly
+          as learning exercises so the UI/UX may not be the most impressive.
         </p>
       </div>
       <div

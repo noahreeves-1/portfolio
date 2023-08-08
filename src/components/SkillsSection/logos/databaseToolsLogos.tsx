@@ -6,6 +6,7 @@ import dockerLogo from "../../../assets/images/docker-svgrepo-com.svg";
 import redisLogo from "../../../assets/images/redis-svgrepo-com.svg";
 import turboRepoLogo from "../../../assets/images/turborepo.dark.svg";
 import nxLogo from "../../../assets/images/nx-logo.svg";
+import prismaLogo from "../../../assets/images/prisma-logo.svg";
 import { ILogo } from "./languageLogos";
 
 const databaseToolsLogos: ILogo[] = [
@@ -48,6 +49,11 @@ const databaseToolsLogos: ILogo[] = [
     name: "Nx",
     src: nxLogo,
     alt: "Nx logo",
+  },
+  {
+    name: "Prisma",
+    src: prismaLogo,
+    alt: "Prisma logo",
   },
 ];
 

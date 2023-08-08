@@ -92,20 +92,19 @@ export const BrandHighlights: React.FC = () => {
         >
           Advising
           <span className="text-cloud-blue-500 font-bold"> Fortune 500 </span>
-          companies
+          companies (Accenture)
         </p>
         <p style={styleSlideInFromLeft}>
           Winning 2015{" "}
           <span className="text-cloud-blue-500 font-bold">
-            Franchisee of the Year
+            Franchisee of the Year{" "}
           </span>
+          <span>(Glass Doctor)</span>
         </p>
         <p style={styleSlideInFromRight2}>
           Rising to{" "}
-          <span className="text-cloud-blue-500 font-bold">
-            Marketing Manager
-          </span>{" "}
-          from unpaid intern
+          <span className="text-cloud-blue-500 font-bold">Marketing Lead</span>{" "}
+          from unpaid intern (Business Expo Center)
         </p>
       </div>
     </section>

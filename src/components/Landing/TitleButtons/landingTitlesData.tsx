@@ -17,7 +17,7 @@ export const landingTitlesData = [
     details: [
       "Joined Accenture after getting my M.S. in Business Analytics",
       "5 years in the Consulting and Digital Strategy practices",
-      "Focused on data visualization, data strategy & management, and robotic process automation (RPA)",
+      "Focused on data strategy, master data management (MDM), data visualization, and robotic process automation (RPA)",
     ],
   },
   {
@@ -25,8 +25,8 @@ export const landingTitlesData = [
     alt: "mobile development",
     title: "Full-Stack Engineer",
     details: [
-      "Learned how to code full-stack through The Odin Project",
-      "Enjoys using React or React Native for the front-end and Node.js (Express/NestJS) for the back-end",
+      "Learned how to code through The Odin Project, an open-source full stack coding bootcamp",
+      "Enjoys using React/React Native for the front-end and Node.js for the back-end",
       "Always learning and expanding my skillset",
     ],
   },
@@ -35,9 +35,9 @@ export const landingTitlesData = [
     alt: "lightbulb",
     title: "Entrepreneur",
     details: [
-      "Currently working on a mobile app using React Native, NestJS, and GCP",
-      "A social media-based food app to help people find better food faster",
-      "Launching in Los Angeles in late 2023",
+      "Currently building on a food-based social media app startup with a friend",
+      "Leading the development of the app and the business strategy",
+      "Launching in Southern California in late 2023",
     ],
   },
 ];
