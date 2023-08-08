@@ -36,12 +36,9 @@ export const SkillsSection = () => {
         id="skills"
         className="px-4 py-14 bg-cloud-blue-700 flex flex-col items-center animate-fadeUp sm:py-28"
       >
-        <h2 className="text-center text-white text-xl font-bold sm:text-3xl">
-          Programming Skills
+        <h2 className="text-center pb-4 sm:pb-12 text-white text-xl font-bold sm:text-3xl">
+          Programming
         </h2>
-        <p className="py-6 text-center text-gray-300 text-sm sm:text-lg sm:py-12">
-          I have used these to build web and mobile apps
-        </p>
         <div
           ref={programRef}
           id="programming-skills-container"
@@ -76,7 +73,7 @@ export const SkillsSection = () => {
           className={nonProgramIsIntersecting ? "animate-fadeUp" : "opacity-0"}
         >
           <h2 className="pt-12 sm:pt-24 text-center text-white text-xl font-bold sm:text-3xl">
-            Non-Programming Skills
+            Technology Skills
           </h2>
           <p className="pt-6 text-sm text-gray-300 text-center sm:pt-12 sm:text-lg">
             I have extensive experience with these and can use them with

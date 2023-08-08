@@ -42,22 +42,22 @@ export function LandingSection() {
             className="flex gap-5 py-2 sm:py-10 sm:gap-10"
             style={styleParallaxLeft}
           >
-            <p className="pt-8 animate-slideInDown1 sm:text-2xl">Planner</p>
             <p className="pt-8 animate-slideInDown2 sm:text-2xl">
               Self-Starter
             </p>
+            <p className="pt-8 animate-slideInDown1 sm:text-2xl">Planner</p>
             <p className="pt-8 animate-slideInDown3 sm:text-2xl">Dreamer</p>
           </div>
           <div style={styleOneLiner}>
             <p className="one-liner animate-slideInLeft text-sm sm:text-xl">
               I'm a management consultant turned software engineer currently
-              working on an app idea I have. To do this, I quit my job and
-              traveled abroad for a year, and it was all worth it.
+              working on an app idea I have. I quit my job and traveled abroad
+              for a year while learning how to code, and it was all worth it.
             </p>
           </div>
           <div
             id="titles"
-            className="pt-10 text-sm flex gap-4 justify-around sm:text-xl"
+            className="pt-14 text-sm flex gap-4 justify-around sm:text-xl"
           >
             {landingTitlesData.map((eachTitle, index) => {
               return (
